@@ -1,0 +1,17 @@
+# --- 비밀 (절대 커밋 금지) ---
+.env
+*.env
+.env.*
+*api_key*
+*.key
+
+# --- 파이썬 ---
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# --- 편집기·OS ---
+.DS_Store
+Thumbs.db

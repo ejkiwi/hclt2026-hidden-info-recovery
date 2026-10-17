@@ -1,0 +1,40 @@
+{
+  "_notes": [
+    "English target words (30), the baseline condition to compare targets_kr.json against.",
+    "Same constraints as the Korean list: nouns only (see game.py mentions_word), and no forbidden word may contain the target word as a substring.",
+    "ASCII targets are matched with word boundaries, so 'cat' does not falsely match 'category'.",
+    "`forbidden` only applies when --forbid-related is passed (the original party-game variant). Off by default = SPAG's rules."
+  ],
+  "targets": [
+    {"word": "school", "forbidden": ["student", "teacher", "classroom", "lesson", "homework"]},
+    {"word": "hospital", "forbidden": ["doctor", "nurse", "patient", "surgery", "ambulance"]},
+    {"word": "coffee", "forbidden": ["cafe", "espresso", "caffeine", "beans", "latte"]},
+    {"word": "subway", "forbidden": ["station", "platform", "commute", "underground", "turnstile"]},
+    {"word": "puppy", "forbidden": ["dog", "leash", "bark", "walk", "pet"]},
+    {"word": "ocean", "forbidden": ["wave", "beach", "salt", "tide", "seagull"]},
+    {"word": "winter", "forbidden": ["snow", "cold", "coat", "heater", "christmas"]},
+    {"word": "soccer", "forbidden": ["goal", "world cup", "striker", "pitch", "dribble"]},
+    {"word": "refrigerator", "forbidden": ["fridge", "freezer", "kitchen", "leftovers", "chilled"]},
+    {"word": "umbrella", "forbidden": ["rain", "monsoon", "handle", "drizzle", "raincoat"]},
+    {"word": "wedding", "forbidden": ["bride", "groom", "ceremony", "vows", "honeymoon"]},
+    {"word": "library", "forbidden": ["book", "borrow", "quiet", "shelves", "librarian"]},
+    {"word": "airplane", "forbidden": ["airport", "takeoff", "boarding", "pilot", "flight"]},
+    {"word": "kimchi", "forbidden": ["cabbage", "fermented", "spicy", "side dish", "korean"]},
+    {"word": "exam", "forbidden": ["grade", "score", "pass", "cheating", "answer sheet"]},
+    {"word": "cinema", "forbidden": ["popcorn", "screen", "showing", "seat", "ticket"]},
+    {"word": "bicycle", "forbidden": ["pedal", "wheel", "helmet", "brake", "saddle"]},
+    {"word": "birthday", "forbidden": ["cake", "candle", "gift", "celebrate", "party"]},
+    {"word": "bank", "forbidden": ["account", "deposit", "loan", "teller", "savings"]},
+    {"word": "ramen", "forbidden": ["noodles", "broth", "instant", "chopsticks", "egg"]},
+    {"word": "cat", "forbidden": ["meow", "whiskers", "litter", "purr", "kitten"]},
+    {"word": "glasses", "forbidden": ["eyesight", "lens", "frames", "nearsighted", "prescription"]},
+    {"word": "smartphone", "forbidden": ["text", "battery", "screen", "call", "app"]},
+    {"word": "piano", "forbidden": ["keys", "instrument", "tune", "sheet music", "chord"]},
+    {"word": "amusement park", "forbidden": ["rollercoaster", "carousel", "ride", "ferris wheel", "ticket"]},
+    {"word": "post office", "forbidden": ["letter", "parcel", "stamp", "delivery", "mailman"]},
+    {"word": "dentist", "forbidden": ["cavity", "teeth", "drill", "braces", "floss"]},
+    {"word": "passport", "forbidden": ["travel", "visa", "customs", "immigration", "abroad"]},
+    {"word": "taekwondo", "forbidden": ["kick", "belt", "martial arts", "dojo", "uniform"]},
+    {"word": "snowman", "forbidden": ["roll", "carrot", "scarf", "melt", "frosty"]}
+  ]
+}

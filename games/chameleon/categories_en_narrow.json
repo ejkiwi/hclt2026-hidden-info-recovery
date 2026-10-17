@@ -1,0 +1,16 @@
+{
+  "_notes": [
+    "'Narrow category' condition word lists (English) — user-confirmed design 2026-08-10.",
+    "Each of the 5 broad categories in categories_en.json (animals/food/sports/appliances/jobs) narrowed to a tight subcategory.",
+    "Purpose: test whether the 'candidate-space sharpness' axis found in Spyfall also operates in Chameleon.",
+    "Game rules and prompts unchanged (standard design); only the word data is swapped.",
+    "Constraints -- nouns only; within a category no word may be a substring of another (leak detection uses substring matching)."
+  ],
+  "categories": {
+    "aquatic animals": ["whale", "shark", "octopus", "squid", "jellyfish", "sea turtle", "shrimp", "stingray", "pufferfish", "salmon", "tuna", "mackerel", "anchovy", "seahorse", "starfish", "sea urchin", "clam", "otter", "seal", "dolphin"],
+    "soups and stews": ["chicken soup", "tomato soup", "pumpkin soup", "mushroom soup", "onion soup", "corn soup", "seaweed soup", "clam chowder", "beef stew", "oxtail soup", "ramen", "pho", "minestrone", "gazpacho", "borscht", "miso soup", "hot pot", "dumpling soup", "bone broth", "curry stew"],
+    "ball sports": ["soccer", "basketball", "baseball", "volleyball", "tennis", "ping pong", "badminton", "golf", "bowling", "billiards", "dodgeball", "handball", "rugby", "cricket", "hockey", "futsal", "polo", "softball", "lacrosse", "squash"],
+    "kitchen appliances": ["refrigerator", "microwave", "gas stove", "induction cooktop", "oven", "air fryer", "toaster", "mixer", "blender", "coffee machine", "rice cooker", "electric kettle", "dishwasher", "water purifier", "juicer", "bread maker", "waffle maker", "coffee grinder", "food processor", "electric grill"],
+    "hospital jobs": ["doctor", "surgeon", "nurse", "pharmacist", "radiologist", "physical therapist", "occupational therapist", "speech therapist", "paramedic", "midwife", "nutritionist", "dental hygienist", "counselor", "social worker", "receptionist", "lab technician", "anesthesiologist", "pediatrician", "cardiologist", "janitor"]
+  }
+}

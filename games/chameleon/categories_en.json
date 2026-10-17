@@ -1,0 +1,20 @@
+{
+  "_notes": [
+    "English counterpart of categories_kr.json -- the baseline to compare the Korean condition against.",
+    "Same design: candidates are clustered inside one semantic domain, unlike Spyfall's 30 mutually distant locations.",
+    "20 words per category; 16 are sampled per game (matching the paper's Chameleon code, which shuffles then takes the first 16).",
+    "Constraint -- nouns only, and no word may contain another word of the same category as a substring (leakage detection is substring/word-boundary based)."
+  ],
+  "categories": {
+    "Animals": ["puppy", "cat", "elephant", "giraffe", "tiger", "penguin", "dolphin", "squirrel", "raccoon", "fox",
+                "camel", "panda", "gorilla", "kangaroo", "owl", "crocodile", "hippo", "cheetah", "otter", "mole"],
+    "Food": ["kimchi stew", "bibimbap", "tteokbokki", "pork belly", "black bean noodles", "dumpling", "fried chicken", "pizza", "sushi", "pasta",
+             "cold noodles", "blood sausage", "curry", "ginseng chicken soup", "pork bone stew", "pho", "pork cutlet", "tripe", "army stew", "knife noodles"],
+    "Jobs": ["doctor", "lawyer", "teacher", "police officer", "firefighter", "chef", "singer", "painter", "farmer", "reporter",
+             "nurse", "architect", "interpreter", "photographer", "veterinarian", "hairdresser", "courier", "barista", "accountant", "pilot"],
+    "Sports": ["soccer", "baseball", "basketball", "volleyball", "swimming", "tennis", "golf", "boxing", "skiing", "archery",
+               "fencing", "bowling", "ping pong", "badminton", "yoga", "climbing", "horse riding", "rowing", "gymnastics", "weightlifting"],
+    "Appliances": ["refrigerator", "washing machine", "microwave", "vacuum cleaner", "air conditioner", "electric fan", "humidifier", "water purifier", "rice cooker", "iron",
+                   "toaster", "blender", "clothes dryer", "air purifier", "dishwasher", "hair dryer", "electric kettle", "oven", "coffee maker", "massage chair"]
+  }
+}

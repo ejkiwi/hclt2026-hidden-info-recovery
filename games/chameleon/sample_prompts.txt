@@ -1,0 +1,858 @@
+==============================================================================
+== HINT -- first speaker, villager (Player0)
+==============================================================================
+**Game Context:** You are playing "The Chameleon" with other players.
+
+**How The Chameleon Works:**
+- One player is secretly the Chameleon; all other players are Villagers (Non-Chameleons)
+- Everyone sees the same category and the same list of candidate words
+- The secret word is one of the candidate words. Villagers know the secret word; the Chameleon does NOT
+- The Chameleon knows it is the Chameleon, but nobody else knows who the Chameleon is
+
+**Game Flow (one single round):**
+- Hint Phase: each player, in a fixed speaking order, says exactly ONE hint word related to the secret word
+  - You see the hint words of the players who spoke before you
+  - If your hint is too obvious, the Chameleon may work out the secret word
+  - If it is too cryptic, the others may start to think YOU are the Chameleon
+  - If another player already said the word you were going to say, you may repeat it
+- After the Hint Phase, every player sees all hint words
+- Discussion Phase: after all hint words are revealed and before voting, each player speaks ONCE, in the same speaking order, about who they find suspicious and why
+  - Earlier statements are visible to later speakers; everything said here is public and may influence the vote
+- Voting Phase: all players vote simultaneously for who they think the Chameleon is
+  - The player with the most votes is accused. If there is a tie, a randomly chosen dealer (one of the players) picks among the tied players
+- Final Guess: if the accused player is the Chameleon, the Chameleon gets one last chance to guess the secret word from the candidate list
+
+**Win Conditions:**
+- Chameleon wins: it is not accused, OR it is accused but guesses the secret word correctly
+- Villagers win: the Chameleon is accused AND it fails to guess the secret word
+
+**Critical Reminders:**
+- Consider the category, the candidate list, and everything said so far
+- Ensure you adhere to the response format
+- You must speak in Korean language at any cost!
+
+**Players in this game (speaking order):** Player0, Player1, Player2, Player3, Player4
+**Your name in this game is:** Player0
+
+**Category:** Appliances
+**Candidate words (16 total):**
+- Refrigerator
+- Microwave
+- Toaster
+- Washing Machine
+- Dryer
+- Dishwasher
+- Vacuum Cleaner
+- Air Conditioner
+- Fan
+- Heater
+- Blender
+- Kettle
+- Iron
+- Hair Dryer
+- Television
+- Rice Cooker
+
+**The secret word is: Microwave**
+
+**Game history so far:** (none yet)
+
+You are a Villager. It is now your turn to give your hint word.
+Your hint must relate to the secret word. Remember: too obvious helps the Chameleon work out the secret word, too cryptic makes the others suspect YOU.
+
+**Response Format Requirements:**
+You must respond with only valid JSON wrapped in triple pipes |||...|||
+Think through your approach before outputting JSON. No text should appear after the JSON.
+Think step by step!
+
+Example:
+Let's think step by step...
+|||
+{
+  "hint_word": "YOUR_SINGLE_WORD_HERE"
+}
+|||
+
+Required fields:
+- hint_word: string (exactly ONE single word -- no spaces, no sentences, no punctuation)
+
+Note: The example value above is a formatting placeholder only. Choose your own hint word from the actual game state -- do not copy the example.
+
+==============================================================================
+== HINT -- third speaker, CHAMELEON (Player2), sees 2 previous hints
+==============================================================================
+**Game Context:** You are playing "The Chameleon" with other players.
+
+**How The Chameleon Works:**
+- One player is secretly the Chameleon; all other players are Villagers (Non-Chameleons)
+- Everyone sees the same category and the same list of candidate words
+- The secret word is one of the candidate words. Villagers know the secret word; the Chameleon does NOT
+- The Chameleon knows it is the Chameleon, but nobody else knows who the Chameleon is
+
+**Game Flow (one single round):**
+- Hint Phase: each player, in a fixed speaking order, says exactly ONE hint word related to the secret word
+  - You see the hint words of the players who spoke before you
+  - If your hint is too obvious, the Chameleon may work out the secret word
+  - If it is too cryptic, the others may start to think YOU are the Chameleon
+  - If another player already said the word you were going to say, you may repeat it
+- After the Hint Phase, every player sees all hint words
+- Discussion Phase: after all hint words are revealed and before voting, each player speaks ONCE, in the same speaking order, about who they find suspicious and why
+  - Earlier statements are visible to later speakers; everything said here is public and may influence the vote
+- Voting Phase: all players vote simultaneously for who they think the Chameleon is
+  - The player with the most votes is accused. If there is a tie, a randomly chosen dealer (one of the players) picks among the tied players
+- Final Guess: if the accused player is the Chameleon, the Chameleon gets one last chance to guess the secret word from the candidate list
+
+**Win Conditions:**
+- Chameleon wins: it is not accused, OR it is accused but guesses the secret word correctly
+- Villagers win: the Chameleon is accused AND it fails to guess the secret word
+
+**Critical Reminders:**
+- Consider the category, the candidate list, and everything said so far
+- Ensure you adhere to the response format
+- You must speak in Korean language at any cost!
+
+**Players in this game (speaking order):** Player0, Player1, Player2, Player3, Player4
+**Your name in this game is:** Player2
+
+**Category:** Appliances
+**Candidate words (16 total):**
+- Refrigerator
+- Microwave
+- Toaster
+- Washing Machine
+- Dryer
+- Dishwasher
+- Vacuum Cleaner
+- Air Conditioner
+- Fan
+- Heater
+- Blender
+- Kettle
+- Iron
+- Hair Dryer
+- Television
+- Rice Cooker
+
+**You do NOT know the secret word** -- it is one of the candidates above.
+
+**Game history so far:**
+[Player0 gave hint]: 데우기
+[Player1 gave hint]: 주방
+
+You are the Chameleon. It is now your turn to give your hint word.
+You do NOT know the secret word. Infer what it might be from the category, the candidate list and the previous hints, and give a hint word that could plausibly relate to the secret word so that you blend in.
+
+**Response Format Requirements:**
+You must respond with only valid JSON wrapped in triple pipes |||...|||
+Think through your approach before outputting JSON. No text should appear after the JSON.
+Think step by step!
+
+Example:
+Let's think step by step...
+|||
+{
+  "hint_word": "YOUR_SINGLE_WORD_HERE"
+}
+|||
+
+Required fields:
+- hint_word: string (exactly ONE single word -- no spaces, no sentences, no punctuation)
+
+Note: The example value above is a formatting placeholder only. Choose your own hint word from the actual game state -- do not copy the example.
+
+==============================================================================
+== DISCUSSION -- second discussant, villager (Player1), sees 1 previous statement
+==============================================================================
+**Game Context:** You are playing "The Chameleon" with other players.
+
+**How The Chameleon Works:**
+- One player is secretly the Chameleon; all other players are Villagers (Non-Chameleons)
+- Everyone sees the same category and the same list of candidate words
+- The secret word is one of the candidate words. Villagers know the secret word; the Chameleon does NOT
+- The Chameleon knows it is the Chameleon, but nobody else knows who the Chameleon is
+
+**Game Flow (one single round):**
+- Hint Phase: each player, in a fixed speaking order, says exactly ONE hint word related to the secret word
+  - You see the hint words of the players who spoke before you
+  - If your hint is too obvious, the Chameleon may work out the secret word
+  - If it is too cryptic, the others may start to think YOU are the Chameleon
+  - If another player already said the word you were going to say, you may repeat it
+- After the Hint Phase, every player sees all hint words
+- Discussion Phase: after all hint words are revealed and before voting, each player speaks ONCE, in the same speaking order, about who they find suspicious and why
+  - Earlier statements are visible to later speakers; everything said here is public and may influence the vote
+- Voting Phase: all players vote simultaneously for who they think the Chameleon is
+  - The player with the most votes is accused. If there is a tie, a randomly chosen dealer (one of the players) picks among the tied players
+- Final Guess: if the accused player is the Chameleon, the Chameleon gets one last chance to guess the secret word from the candidate list
+
+**Win Conditions:**
+- Chameleon wins: it is not accused, OR it is accused but guesses the secret word correctly
+- Villagers win: the Chameleon is accused AND it fails to guess the secret word
+
+**Critical Reminders:**
+- Consider the category, the candidate list, and everything said so far
+- Ensure you adhere to the response format
+- You must speak in Korean language at any cost!
+
+**Players in this game (speaking order):** Player0, Player1, Player2, Player3, Player4
+**Your name in this game is:** Player1
+
+**Category:** Appliances
+**Candidate words (16 total):**
+- Refrigerator
+- Microwave
+- Toaster
+- Washing Machine
+- Dryer
+- Dishwasher
+- Vacuum Cleaner
+- Air Conditioner
+- Fan
+- Heater
+- Blender
+- Kettle
+- Iron
+- Hair Dryer
+- Television
+- Rice Cooker
+
+**The secret word is: Microwave**
+
+**Game history so far:**
+[Player0 gave hint]: 데우기
+[Player1 gave hint]: 주방
+[Player2 gave hint]: 전기
+[Player3 gave hint]: 간편식
+[Player4 gave hint]: 회전
+[Player0 said in discussion]: Player2의 '전기'는 어느 가전에나 통하는 말이라 조금 애매하게 느껴졌어요.
+
+You are a Villager. It is now your discussion turn.
+Say who you find suspicious of being the Chameleon and why, based on the hint words and any earlier discussion statements. This is your ONLY discussion statement in this game -- the discussion goes around exactly once. Everything you say is public.
+
+**Response Format Requirements:**
+You must respond with only valid JSON wrapped in triple pipes |||...|||
+Think through your approach before outputting JSON. No text should appear after the JSON.
+Think step by step!
+
+Example:
+Let's think step by step...
+|||
+{
+  "statement": "YOUR DISCUSSION STATEMENT HERE"
+}
+|||
+
+Required fields:
+- statement: string (what you say out loud to the other players)
+
+==============================================================================
+== DISCUSSION -- CHAMELEON (Player2)
+==============================================================================
+**Game Context:** You are playing "The Chameleon" with other players.
+
+**How The Chameleon Works:**
+- One player is secretly the Chameleon; all other players are Villagers (Non-Chameleons)
+- Everyone sees the same category and the same list of candidate words
+- The secret word is one of the candidate words. Villagers know the secret word; the Chameleon does NOT
+- The Chameleon knows it is the Chameleon, but nobody else knows who the Chameleon is
+
+**Game Flow (one single round):**
+- Hint Phase: each player, in a fixed speaking order, says exactly ONE hint word related to the secret word
+  - You see the hint words of the players who spoke before you
+  - If your hint is too obvious, the Chameleon may work out the secret word
+  - If it is too cryptic, the others may start to think YOU are the Chameleon
+  - If another player already said the word you were going to say, you may repeat it
+- After the Hint Phase, every player sees all hint words
+- Discussion Phase: after all hint words are revealed and before voting, each player speaks ONCE, in the same speaking order, about who they find suspicious and why
+  - Earlier statements are visible to later speakers; everything said here is public and may influence the vote
+- Voting Phase: all players vote simultaneously for who they think the Chameleon is
+  - The player with the most votes is accused. If there is a tie, a randomly chosen dealer (one of the players) picks among the tied players
+- Final Guess: if the accused player is the Chameleon, the Chameleon gets one last chance to guess the secret word from the candidate list
+
+**Win Conditions:**
+- Chameleon wins: it is not accused, OR it is accused but guesses the secret word correctly
+- Villagers win: the Chameleon is accused AND it fails to guess the secret word
+
+**Critical Reminders:**
+- Consider the category, the candidate list, and everything said so far
+- Ensure you adhere to the response format
+- You must speak in Korean language at any cost!
+
+**Players in this game (speaking order):** Player0, Player1, Player2, Player3, Player4
+**Your name in this game is:** Player2
+
+**Category:** Appliances
+**Candidate words (16 total):**
+- Refrigerator
+- Microwave
+- Toaster
+- Washing Machine
+- Dryer
+- Dishwasher
+- Vacuum Cleaner
+- Air Conditioner
+- Fan
+- Heater
+- Blender
+- Kettle
+- Iron
+- Hair Dryer
+- Television
+- Rice Cooker
+
+**You do NOT know the secret word** -- it is one of the candidates above.
+
+**Game history so far:**
+[Player0 gave hint]: 데우기
+[Player1 gave hint]: 주방
+[Player2 gave hint]: 전기
+[Player3 gave hint]: 간편식
+[Player4 gave hint]: 회전
+[Player0 said in discussion]: Player2의 '전기'는 어느 가전에나 통하는 말이라 조금 애매하게 느껴졌어요.
+
+You are the Chameleon. It is now your discussion turn.
+Blend in: say who you find suspicious and why, just like a Villager would, so that suspicion does not fall on you. This is your ONLY discussion statement in this game -- the discussion goes around exactly once. Everything you say is public.
+
+**Response Format Requirements:**
+You must respond with only valid JSON wrapped in triple pipes |||...|||
+Think through your approach before outputting JSON. No text should appear after the JSON.
+Think step by step!
+
+Example:
+Let's think step by step...
+|||
+{
+  "statement": "YOUR DISCUSSION STATEMENT HERE"
+}
+|||
+
+Required fields:
+- statement: string (what you say out loud to the other players)
+
+==============================================================================
+== VOTE -- villager (Player3)
+==============================================================================
+**Game Context:** You are playing "The Chameleon" with other players.
+
+**How The Chameleon Works:**
+- One player is secretly the Chameleon; all other players are Villagers (Non-Chameleons)
+- Everyone sees the same category and the same list of candidate words
+- The secret word is one of the candidate words. Villagers know the secret word; the Chameleon does NOT
+- The Chameleon knows it is the Chameleon, but nobody else knows who the Chameleon is
+
+**Game Flow (one single round):**
+- Hint Phase: each player, in a fixed speaking order, says exactly ONE hint word related to the secret word
+  - You see the hint words of the players who spoke before you
+  - If your hint is too obvious, the Chameleon may work out the secret word
+  - If it is too cryptic, the others may start to think YOU are the Chameleon
+  - If another player already said the word you were going to say, you may repeat it
+- After the Hint Phase, every player sees all hint words
+- Discussion Phase: after all hint words are revealed and before voting, each player speaks ONCE, in the same speaking order, about who they find suspicious and why
+  - Earlier statements are visible to later speakers; everything said here is public and may influence the vote
+- Voting Phase: all players vote simultaneously for who they think the Chameleon is
+  - The player with the most votes is accused. If there is a tie, a randomly chosen dealer (one of the players) picks among the tied players
+- Final Guess: if the accused player is the Chameleon, the Chameleon gets one last chance to guess the secret word from the candidate list
+
+**Win Conditions:**
+- Chameleon wins: it is not accused, OR it is accused but guesses the secret word correctly
+- Villagers win: the Chameleon is accused AND it fails to guess the secret word
+
+**Critical Reminders:**
+- Consider the category, the candidate list, and everything said so far
+- Ensure you adhere to the response format
+- You must speak in Korean language at any cost!
+
+**Players in this game (speaking order):** Player0, Player1, Player2, Player3, Player4
+**Your name in this game is:** Player3
+
+**Category:** Appliances
+**Candidate words (16 total):**
+- Refrigerator
+- Microwave
+- Toaster
+- Washing Machine
+- Dryer
+- Dishwasher
+- Vacuum Cleaner
+- Air Conditioner
+- Fan
+- Heater
+- Blender
+- Kettle
+- Iron
+- Hair Dryer
+- Television
+- Rice Cooker
+
+**The secret word is: Microwave**
+
+**Game history so far:**
+[Player0 gave hint]: 데우기
+[Player1 gave hint]: 주방
+[Player2 gave hint]: 전기
+[Player3 gave hint]: 간편식
+[Player4 gave hint]: 회전
+[Player0 said in discussion]: Player2의 '전기'는 어느 가전에나 통하는 말이라 조금 애매하게 느껴졌어요.
+[Player1 said in discussion]: 저도 '전기'가 제일 걸리네요.
+[Player2 said in discussion]: 저는 '회전'이 뜬금없다고 봤습니다.
+[Player3 said in discussion]: '전기' 쪽이 의심스럽긴 해요.
+[Player4 said in discussion]: Player2 아니면 Player0 같아요.
+
+You are a Villager. It is now time to cast your vote for who you think the Chameleon is.
+Remember: the Chameleon does not know the secret word -- look for the player whose contributions do not quite fit the secret word. All players vote at the same time, so you cannot see the other players' votes.
+
+**Response Format Requirements:**
+You must respond with only valid JSON wrapped in triple pipes |||...|||
+Think through your approach before outputting JSON. No text should appear after the JSON.
+Think step by step!
+
+Example:
+Let's think step by step...
+|||
+{
+  "vote": "Charlie"
+}
+|||
+
+Required fields:
+- vote: string (the name of the player you accuse of being the Chameleon -- must be another player in this game)
+
+Note: The name in the example above is a formatting placeholder only. Choose your vote from the actual players in this game -- do not copy the example name.
+
+==============================================================================
+== VOTE -- CHAMELEON (Player2)
+==============================================================================
+**Game Context:** You are playing "The Chameleon" with other players.
+
+**How The Chameleon Works:**
+- One player is secretly the Chameleon; all other players are Villagers (Non-Chameleons)
+- Everyone sees the same category and the same list of candidate words
+- The secret word is one of the candidate words. Villagers know the secret word; the Chameleon does NOT
+- The Chameleon knows it is the Chameleon, but nobody else knows who the Chameleon is
+
+**Game Flow (one single round):**
+- Hint Phase: each player, in a fixed speaking order, says exactly ONE hint word related to the secret word
+  - You see the hint words of the players who spoke before you
+  - If your hint is too obvious, the Chameleon may work out the secret word
+  - If it is too cryptic, the others may start to think YOU are the Chameleon
+  - If another player already said the word you were going to say, you may repeat it
+- After the Hint Phase, every player sees all hint words
+- Discussion Phase: after all hint words are revealed and before voting, each player speaks ONCE, in the same speaking order, about who they find suspicious and why
+  - Earlier statements are visible to later speakers; everything said here is public and may influence the vote
+- Voting Phase: all players vote simultaneously for who they think the Chameleon is
+  - The player with the most votes is accused. If there is a tie, a randomly chosen dealer (one of the players) picks among the tied players
+- Final Guess: if the accused player is the Chameleon, the Chameleon gets one last chance to guess the secret word from the candidate list
+
+**Win Conditions:**
+- Chameleon wins: it is not accused, OR it is accused but guesses the secret word correctly
+- Villagers win: the Chameleon is accused AND it fails to guess the secret word
+
+**Critical Reminders:**
+- Consider the category, the candidate list, and everything said so far
+- Ensure you adhere to the response format
+- You must speak in Korean language at any cost!
+
+**Players in this game (speaking order):** Player0, Player1, Player2, Player3, Player4
+**Your name in this game is:** Player2
+
+**Category:** Appliances
+**Candidate words (16 total):**
+- Refrigerator
+- Microwave
+- Toaster
+- Washing Machine
+- Dryer
+- Dishwasher
+- Vacuum Cleaner
+- Air Conditioner
+- Fan
+- Heater
+- Blender
+- Kettle
+- Iron
+- Hair Dryer
+- Television
+- Rice Cooker
+
+**You do NOT know the secret word** -- it is one of the candidates above.
+
+**Game history so far:**
+[Player0 gave hint]: 데우기
+[Player1 gave hint]: 주방
+[Player2 gave hint]: 전기
+[Player3 gave hint]: 간편식
+[Player4 gave hint]: 회전
+[Player0 said in discussion]: Player2의 '전기'는 어느 가전에나 통하는 말이라 조금 애매하게 느껴졌어요.
+[Player1 said in discussion]: 저도 '전기'가 제일 걸리네요.
+[Player2 said in discussion]: 저는 '회전'이 뜬금없다고 봤습니다.
+[Player3 said in discussion]: '전기' 쪽이 의심스럽긴 해요.
+[Player4 said in discussion]: Player2 아니면 Player0 같아요.
+
+You are the Chameleon. It is now time to cast your vote for who you think the Chameleon is.
+Vote for another player to deflect suspicion away from yourself. All players vote at the same time, so you cannot see the other players' votes.
+
+**Response Format Requirements:**
+You must respond with only valid JSON wrapped in triple pipes |||...|||
+Think through your approach before outputting JSON. No text should appear after the JSON.
+Think step by step!
+
+Example:
+Let's think step by step...
+|||
+{
+  "vote": "Charlie"
+}
+|||
+
+Required fields:
+- vote: string (the name of the player you accuse -- must be another player in this game)
+
+Note: The name in the example above is a formatting placeholder only. Choose your vote from the actual players in this game -- do not copy the example name.
+
+==============================================================================
+== DEALER TIEBREAK -- dealer (Player4), votes now public
+==============================================================================
+**Game Context:** You are playing "The Chameleon" with other players.
+
+**How The Chameleon Works:**
+- One player is secretly the Chameleon; all other players are Villagers (Non-Chameleons)
+- Everyone sees the same category and the same list of candidate words
+- The secret word is one of the candidate words. Villagers know the secret word; the Chameleon does NOT
+- The Chameleon knows it is the Chameleon, but nobody else knows who the Chameleon is
+
+**Game Flow (one single round):**
+- Hint Phase: each player, in a fixed speaking order, says exactly ONE hint word related to the secret word
+  - You see the hint words of the players who spoke before you
+  - If your hint is too obvious, the Chameleon may work out the secret word
+  - If it is too cryptic, the others may start to think YOU are the Chameleon
+  - If another player already said the word you were going to say, you may repeat it
+- After the Hint Phase, every player sees all hint words
+- Discussion Phase: after all hint words are revealed and before voting, each player speaks ONCE, in the same speaking order, about who they find suspicious and why
+  - Earlier statements are visible to later speakers; everything said here is public and may influence the vote
+- Voting Phase: all players vote simultaneously for who they think the Chameleon is
+  - The player with the most votes is accused. If there is a tie, a randomly chosen dealer (one of the players) picks among the tied players
+- Final Guess: if the accused player is the Chameleon, the Chameleon gets one last chance to guess the secret word from the candidate list
+
+**Win Conditions:**
+- Chameleon wins: it is not accused, OR it is accused but guesses the secret word correctly
+- Villagers win: the Chameleon is accused AND it fails to guess the secret word
+
+**Critical Reminders:**
+- Consider the category, the candidate list, and everything said so far
+- Ensure you adhere to the response format
+- You must speak in Korean language at any cost!
+
+**Players in this game (speaking order):** Player0, Player1, Player2, Player3, Player4
+**Your name in this game is:** Player4
+
+**Category:** Appliances
+**Candidate words (16 total):**
+- Refrigerator
+- Microwave
+- Toaster
+- Washing Machine
+- Dryer
+- Dishwasher
+- Vacuum Cleaner
+- Air Conditioner
+- Fan
+- Heater
+- Blender
+- Kettle
+- Iron
+- Hair Dryer
+- Television
+- Rice Cooker
+
+**The secret word is: Microwave**
+
+**Game history so far:**
+[Player0 gave hint]: 데우기
+[Player1 gave hint]: 주방
+[Player2 gave hint]: 전기
+[Player3 gave hint]: 간편식
+[Player4 gave hint]: 회전
+[Player0 said in discussion]: Player2의 '전기'는 어느 가전에나 통하는 말이라 조금 애매하게 느껴졌어요.
+[Player1 said in discussion]: 저도 '전기'가 제일 걸리네요.
+[Player2 said in discussion]: 저는 '회전'이 뜬금없다고 봤습니다.
+[Player3 said in discussion]: '전기' 쪽이 의심스럽긴 해요.
+[Player4 said in discussion]: Player2 아니면 Player0 같아요.
+[Player0 voted]: Player2
+[Player1 voted]: Player2
+[Player2 voted]: Player0
+[Player3 voted]: Player0
+[Player4 voted]: ABSTAIN
+
+You are the dealer for this game (chosen at random among the players -- this is separate from whether you are the Chameleon or a Villager).
+The vote ended in a tie. Players Player0, Player2 received the most votes.
+As the dealer, you must now pick which one of them is accused. Choose from the tied players only.
+
+**Response Format Requirements:**
+You must respond with only valid JSON wrapped in triple pipes |||...|||
+Think through your approach before outputting JSON. No text should appear after the JSON.
+Think step by step!
+
+Example:
+Let's think step by step...
+|||
+{
+  "choice": "Charlie"
+}
+|||
+
+Required fields:
+- choice: string (the name of the accused player -- must be one of the tied players listed above)
+
+Note: The name in the example above is a formatting placeholder only. Choose from the tied players in the actual game -- do not copy the example name.
+
+==============================================================================
+== FINAL GUESS -- caught CHAMELEON (Player2)
+==============================================================================
+**Game Context:** You are playing "The Chameleon" with other players.
+
+**How The Chameleon Works:**
+- One player is secretly the Chameleon; all other players are Villagers (Non-Chameleons)
+- Everyone sees the same category and the same list of candidate words
+- The secret word is one of the candidate words. Villagers know the secret word; the Chameleon does NOT
+- The Chameleon knows it is the Chameleon, but nobody else knows who the Chameleon is
+
+**Game Flow (one single round):**
+- Hint Phase: each player, in a fixed speaking order, says exactly ONE hint word related to the secret word
+  - You see the hint words of the players who spoke before you
+  - If your hint is too obvious, the Chameleon may work out the secret word
+  - If it is too cryptic, the others may start to think YOU are the Chameleon
+  - If another player already said the word you were going to say, you may repeat it
+- After the Hint Phase, every player sees all hint words
+- Discussion Phase: after all hint words are revealed and before voting, each player speaks ONCE, in the same speaking order, about who they find suspicious and why
+  - Earlier statements are visible to later speakers; everything said here is public and may influence the vote
+- Voting Phase: all players vote simultaneously for who they think the Chameleon is
+  - The player with the most votes is accused. If there is a tie, a randomly chosen dealer (one of the players) picks among the tied players
+- Final Guess: if the accused player is the Chameleon, the Chameleon gets one last chance to guess the secret word from the candidate list
+
+**Win Conditions:**
+- Chameleon wins: it is not accused, OR it is accused but guesses the secret word correctly
+- Villagers win: the Chameleon is accused AND it fails to guess the secret word
+
+**Critical Reminders:**
+- Consider the category, the candidate list, and everything said so far
+- Ensure you adhere to the response format
+- You must speak in Korean language at any cost!
+
+**Players in this game (speaking order):** Player0, Player1, Player2, Player3, Player4
+**Your name in this game is:** Player2
+
+**Category:** Appliances
+**Candidate words (16 total):**
+- Refrigerator
+- Microwave
+- Toaster
+- Washing Machine
+- Dryer
+- Dishwasher
+- Vacuum Cleaner
+- Air Conditioner
+- Fan
+- Heater
+- Blender
+- Kettle
+- Iron
+- Hair Dryer
+- Television
+- Rice Cooker
+
+**You do NOT know the secret word** -- it is one of the candidates above.
+
+**Game history so far:**
+[Player0 gave hint]: 데우기
+[Player1 gave hint]: 주방
+[Player2 gave hint]: 전기
+[Player3 gave hint]: 간편식
+[Player4 gave hint]: 회전
+[Player0 said in discussion]: Player2의 '전기'는 어느 가전에나 통하는 말이라 조금 애매하게 느껴졌어요.
+[Player1 said in discussion]: 저도 '전기'가 제일 걸리네요.
+[Player2 said in discussion]: 저는 '회전'이 뜬금없다고 봤습니다.
+[Player3 said in discussion]: '전기' 쪽이 의심스럽긴 해요.
+[Player4 said in discussion]: Player2 아니면 Player0 같아요.
+[Player0 voted]: Player2
+[Player1 voted]: Player2
+[Player2 voted]: Player0
+[Player3 voted]: Player0
+[Player4 voted]: ABSTAIN
+[Player4 (dealer) broke the tie]: Player2
+
+You are the Chameleon and you have been accused. You have one last chance to win the game: guess the secret word.
+Pick exactly one word from the candidate list, based on the category and the other players' hint words. You cannot skip this.
+
+**Response Format Requirements:**
+You must respond with only valid JSON wrapped in triple pipes |||...|||
+Think through your approach before outputting JSON. No text should appear after the JSON.
+Think step by step!
+
+Example:
+Let's think step by step...
+|||
+{
+  "guess": "YOUR_GUESS_HERE"
+}
+|||
+
+Required fields:
+- guess: string (your guess -- must be exactly one of the candidate words)
+
+Note: The example value above is a formatting placeholder only. Choose your guess from the actual candidate list -- do not copy the example.
+
+==============================================================================
+== NO-DISCUSSION control -- HINT, villager (Player0)
+==============================================================================
+**Game Context:** You are playing "The Chameleon" with other players.
+
+**How The Chameleon Works:**
+- One player is secretly the Chameleon; all other players are Villagers (Non-Chameleons)
+- Everyone sees the same category and the same list of candidate words
+- The secret word is one of the candidate words. Villagers know the secret word; the Chameleon does NOT
+- The Chameleon knows it is the Chameleon, but nobody else knows who the Chameleon is
+
+**Game Flow (one single round):**
+- Hint Phase: each player, in a fixed speaking order, says exactly ONE hint word related to the secret word
+  - You see the hint words of the players who spoke before you
+  - If your hint is too obvious, the Chameleon may work out the secret word
+  - If it is too cryptic, the others may start to think YOU are the Chameleon
+  - If another player already said the word you were going to say, you may repeat it
+- After the Hint Phase, every player sees all hint words
+- Voting Phase: all players vote simultaneously for who they think the Chameleon is
+  - The player with the most votes is accused. If there is a tie, a randomly chosen dealer (one of the players) picks among the tied players
+- Final Guess: if the accused player is the Chameleon, the Chameleon gets one last chance to guess the secret word from the candidate list
+
+**Win Conditions:**
+- Chameleon wins: it is not accused, OR it is accused but guesses the secret word correctly
+- Villagers win: the Chameleon is accused AND it fails to guess the secret word
+
+**Critical Reminders:**
+- Consider the category, the candidate list, and everything said so far
+- Ensure you adhere to the response format
+- You must speak in Korean language at any cost!
+
+**Players in this game (speaking order):** Player0, Player1, Player2, Player3, Player4
+**Your name in this game is:** Player0
+
+**Category:** Appliances
+**Candidate words (16 total):**
+- Refrigerator
+- Microwave
+- Toaster
+- Washing Machine
+- Dryer
+- Dishwasher
+- Vacuum Cleaner
+- Air Conditioner
+- Fan
+- Heater
+- Blender
+- Kettle
+- Iron
+- Hair Dryer
+- Television
+- Rice Cooker
+
+**The secret word is: Microwave**
+
+**Game history so far:** (none yet)
+
+You are a Villager. It is now your turn to give your hint word.
+Your hint must relate to the secret word. Remember: too obvious helps the Chameleon work out the secret word, too cryptic makes the others suspect YOU.
+
+**Response Format Requirements:**
+You must respond with only valid JSON wrapped in triple pipes |||...|||
+Think through your approach before outputting JSON. No text should appear after the JSON.
+Think step by step!
+
+Example:
+Let's think step by step...
+|||
+{
+  "hint_word": "YOUR_SINGLE_WORD_HERE"
+}
+|||
+
+Required fields:
+- hint_word: string (exactly ONE single word -- no spaces, no sentences, no punctuation)
+
+Note: The example value above is a formatting placeholder only. Choose your own hint word from the actual game state -- do not copy the example.
+
+==============================================================================
+== NO-DISCUSSION control -- VOTE, villager (Player0)
+==============================================================================
+**Game Context:** You are playing "The Chameleon" with other players.
+
+**How The Chameleon Works:**
+- One player is secretly the Chameleon; all other players are Villagers (Non-Chameleons)
+- Everyone sees the same category and the same list of candidate words
+- The secret word is one of the candidate words. Villagers know the secret word; the Chameleon does NOT
+- The Chameleon knows it is the Chameleon, but nobody else knows who the Chameleon is
+
+**Game Flow (one single round):**
+- Hint Phase: each player, in a fixed speaking order, says exactly ONE hint word related to the secret word
+  - You see the hint words of the players who spoke before you
+  - If your hint is too obvious, the Chameleon may work out the secret word
+  - If it is too cryptic, the others may start to think YOU are the Chameleon
+  - If another player already said the word you were going to say, you may repeat it
+- After the Hint Phase, every player sees all hint words
+- Voting Phase: all players vote simultaneously for who they think the Chameleon is
+  - The player with the most votes is accused. If there is a tie, a randomly chosen dealer (one of the players) picks among the tied players
+- Final Guess: if the accused player is the Chameleon, the Chameleon gets one last chance to guess the secret word from the candidate list
+
+**Win Conditions:**
+- Chameleon wins: it is not accused, OR it is accused but guesses the secret word correctly
+- Villagers win: the Chameleon is accused AND it fails to guess the secret word
+
+**Critical Reminders:**
+- Consider the category, the candidate list, and everything said so far
+- Ensure you adhere to the response format
+- You must speak in Korean language at any cost!
+
+**Players in this game (speaking order):** Player0, Player1, Player2, Player3, Player4
+**Your name in this game is:** Player0
+
+**Category:** Appliances
+**Candidate words (16 total):**
+- Refrigerator
+- Microwave
+- Toaster
+- Washing Machine
+- Dryer
+- Dishwasher
+- Vacuum Cleaner
+- Air Conditioner
+- Fan
+- Heater
+- Blender
+- Kettle
+- Iron
+- Hair Dryer
+- Television
+- Rice Cooker
+
+**The secret word is: Microwave**
+
+**Game history so far:** (none yet)
+
+You are a Villager. It is now time to cast your vote for who you think the Chameleon is.
+Remember: the Chameleon does not know the secret word -- look for the player whose contributions do not quite fit the secret word. All players vote at the same time, so you cannot see the other players' votes.
+
+**Response Format Requirements:**
+You must respond with only valid JSON wrapped in triple pipes |||...|||
+Think through your approach before outputting JSON. No text should appear after the JSON.
+Think step by step!
+
+Example:
+Let's think step by step...
+|||
+{
+  "vote": "Charlie"
+}
+|||
+
+Required fields:
+- vote: string (the name of the player you accuse of being the Chameleon -- must be another player in this game)
+
+Note: The name in the example above is a formatting placeholder only. Choose your vote from the actual players in this game -- do not copy the example name.
+
